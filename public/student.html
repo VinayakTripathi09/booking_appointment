@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Student Portal</h1>
+
+    <section id="search-teacher">
+        <h2>Search Teacher</h2>
+        <input type="text" id="search-input" placeholder="Search by name, department, or subject">
+        <button onclick="searchTeachers()">Search</button>
+        <div id="teacher-results"></div>
+    </section>
+
+    <section id="book-appointment">
+        <h2>Book Appointment</h2>
+        <div id="appointment-form">
+            <input type="datetime-local" id="appointment-date" required>
+            <textarea id="message" placeholder="Message for the teacher" required></textarea>
+            <button onclick="bookAppointment()">Book Appointment</button>
+        </div>
+    </section>
+
+    <script src="js/student.js"></script>
+</body>
+</html>

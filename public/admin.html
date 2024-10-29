@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Admin Portal</h1>
+
+    <section id="add-teacher">
+        <h2>Add Teacher</h2>
+        <form id="add-teacher-form">
+            <input type="text" id="teacher-name" placeholder="Name" required>
+            <input type="text" id="teacher-department" placeholder="Department" required>
+            <input type="text" id="teacher-subject" placeholder="Subject" required>
+            <button type="submit">Add Teacher</button>
+        </form>
+    </section>
+
+    <section id="manage-teachers">
+        <h2>Manage Teachers</h2>
+        <div id="teacher-list"></div>
+    </section>
+
+    <section id="approve-students">
+        <h2>Approve Student Registrations</h2>
+        <div id="student-list"></div>
+    </section>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

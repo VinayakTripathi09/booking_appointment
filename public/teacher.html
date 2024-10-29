@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Teacher Portal</h1>
+
+    <section id="schedule-appointment">
+        <h2>Schedule Appointment</h2>
+        <form id="appointment-form">
+            <input type="datetime-local" id="appointment-date" required>
+            <button type="submit">Schedule Appointment</button>
+        </form>
+    </section>
+
+    <section id="manage-appointments">
+        <h2>Manage Appointments</h2>
+        <div id="appointment-list"></div>
+    </section>
+
+    <section id="view-messages">
+        <h2>Messages</h2>
+        <div id="message-list"></div>
+    </section>
+
+    <script src="js/teacher.js"></script>
+</body>
+</html>
